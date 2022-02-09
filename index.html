@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário</title>
+
+    <style>
+        .grupo-formulario label {
+            display: inline-block;
+            width: 150px;
+            margin-top: 10px;
+        }
+        
+        .botoes-form {
+            margin-top: 10px;
+        }
+        
+        .cpf {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Preencha o formulário abaixo</h1>
+        <div id="area">
+            <form id="formulario" autocomplete="off">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="grupo-formulario">
+                        <label>Nome:</label>
+                        <input type="text" />
+                        <label>Sobrenome:</label>
+                        <input type="text" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label>Nascimento:</label>
+                        <input type="number" min="1" max="31" placeholder="dd">
+                        <input type="number" min="1" max="12" placeholder="mm">
+                        <input type="number" min="1900" max="2022" placeholder="yyyy">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label>RG:</label>
+                        <input type="text">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label>CPF:</label>
+                        <input class="cpf" type="text" min="9" max="9"> <span>-</span> <input type="number" min="2" max="2">
+                    </div>
+                </fieldset>
+
+                <div class="botoes-form">
+
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+				<div class="grupo-formulario"> 
+                <label>Rua:</label>
+                <input type="text"/>
+				<label>Numero:</label>
+				<input type="number"/>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label> Bairro: </label>
+				<input type="text"/>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label> Estado: </label>
+				<select id="estado" name="estado">
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    <option value="EX">Estrangeiro</option>
+</select>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label> Cidade: </label>
+				<input type="text"/>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label> Cep: </label>
+				<input type="number" minlength="5" maxlength="5"/> <span>-<span> <input type="number" minlength= "3" maxlength="3"/>
+				</div>
+				
+            </fieldset>
+			<div>
+			<fieldset>
+				<legend>Dados de login </legend>
+				<div class="grupo-formulario">
+				<label>E-mail:</label>
+				<input type="text"/>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label>Imagem de perfil:  </label>
+				<input type="file"/>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label>Login do Usuário: </label>
+				<input type="text"/>
+				</div>
+				
+				<div class="grupo-formulario">
+				<label>Senha: </label>
+				<input type="password" minlength="8" maxlength="8" />
+				</div>
+				
+			</fieldset>
+			<div class="botoes-form">
+			 <input type="submit" />
+			 <input type="reset">
+			</div>
+			
+			
+			</div>
+			
+        </div>
+
+    </main>
+
+</body>
+
+</html>
