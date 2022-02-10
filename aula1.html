@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Formulário</title>
+	<style>
+        body{
+            background-color: deepskyblue;
+        }
+        fieldset{
+			margin-top: 15px;
+		}
+		.grupo-formulario label {
+            display: inline-block;
+            margin-top: 10px;
+        }
+		#fs1 .grupo-formulario label.lb1{
+			width: 90px;
+		}
+		#fs2 .grupo-formulario label.lb1{
+			width: 50px;
+		}
+		#fs3 .grupo-formulario label.lb1{
+			width: 130px;
+		}
+		.grupo-formulario label.lb2{
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		.botoes-form{
+            margin-top: 10px;
+        }
+		.cpf{
+            width: 150px;
+        }
+		.digito{
+			width: 50px;
+		}
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Preencha o formulário abaixo</h1>
+        <div id="area">
+            <form id="formulario" autocomplete="off">
+                <fieldset id="fs1">
+                    <legend>Dados Pessoais</legend>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Nome:</label>
+                        <input type="text" />
+                        <label class="lb2">Sobrenome:</label>
+                        <input type="text" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Nascimento:</label>
+                        <input type="number" min="1" max="31" placeholder="dd" />
+                        <input type="number" min="1" max="12" placeholder="mm" />
+                        <input type="number" min="1900" max="2022" placeholder="yyyy" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">RG:</label>
+                        <input type="text" size="14" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">CPF:</label>
+                        <input type="text" size="9" minlength="9" maxlength="9" /> 
+						<span>-</span> 
+						<input type="text" size="2" minlength="2" maxlength="2" />
+                    </div>
+                </fieldset>
+				<fieldset id="fs2">
+                    <legend>Dados de Endereço</legend>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Rua:</label>
+                        <input type="text" />
+                        <label class="lb2">Número:</label>
+                        <input type="text" size="5"/>
+                    </div>
+					<div class="grupo-formulario">
+                        <label class="lb1"> Bairro: </label>
+                        <input type="text" />
+                    </div>
+					<div class="grupo-formulario">
+                        <label class="lb1">Estado: </label>
+                        <select id="estado" name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1"> Cidade: </label>
+                        <input type="text" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1"> Cep: </label>
+                        <input type="text" size="5" minlength="5" maxlength="5"/> 
+						<span>-</span> 
+						<input type="text" size="3" minlength="3" maxlength="3" />
+                    </div>
+                </fieldset>
+                <fieldset id="fs3">
+                    <legend>Dados de login </legend>
+                    <div class="grupo-formulario">
+                        <label class="lb1">E-mail:</label>
+                        <input type="email" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Imagem de perfil: </label>
+                        <input type="file" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Login do Usuário: </label>
+                        <input type="text" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Senha: </label>
+                        <input type="password" minlength="8" maxlength="25" />
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="lb1">Confirme a senha: </label>
+                        <input type="password" minlength="8" maxlength="25" />
+                    </div>
+                </fieldset>
+                <div class="botoes-form">
+                    <input type="submit" />
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
